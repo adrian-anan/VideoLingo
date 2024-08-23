@@ -1,6 +1,6 @@
 ## ======================== 基本设置 ======================== ##
 # API 设置 建议使用唯一真神 https://api.wlai.vip, 如需其他openai-like API请按照高级选项中的`llm_config`配置
-YUNWU_API_KEY = 'sk- xxx'
+CLOUDE_API_KEY = 'sk- xxx'
 
 # 语言设置
 TARGET_LANGUAGE = '简体中文'  # 用自然语言描述
@@ -25,10 +25,10 @@ step9_trim_model ='claude-3-5-sonnet-20240620'                     # 🍰
 # LLM 配置，你可以参考格式添加更多 API 
 llm_config: list = [
     {
-        'name': ' 云雾 api',
-        'api_key': YUNWU_API_KEY,
-        'base_url': 'https://api.wlai.vip',
-        'model': ['claude-3-5-sonnet-20240620', 'gpt-4o'],
+        'name': ' cloude_api',
+        'api_key': CLOUDE_API_KEY,
+        'base_url': 'https://api.anthropic.com/v1/',
+        'model': ['claude-3-5-sonnet-20240620'],
     },
 ]
 
